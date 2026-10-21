@@ -1,140 +1,22 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="QSX AI builds practical AI assistants and automation systems that help businesses manage leads, customer conversations, and repetitive work.">
-  <meta name="theme-color" content="#050b16">
-  <title>QSX AI — Intelligent Systems. Real Business Impact.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#070b16">
+<meta name="description" content="QSX AI — intelligent systems, automation and business solutions."><title>QSX AI — Intelligent Systems</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div>
-  <div class="ambient ambient-two"></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="QSX AI home">
-      <span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 45 40H28l-8-13-7 13H3L24 3Z" fill="currentColor"/><path d="m24 17 8 14h-8l-4-7 4-7Z" fill="#06101e"/></svg></span>
-      <span>QSX <b>AI</b></span>
-    </a>
-    <nav class="desktop-nav" aria-label="Main navigation">
-      <a href="#services">Services</a><a href="#solutions">Solutions</a><a href="#process">How it works</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-    </nav>
-    <div class="header-actions">
-      <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">EN <span>|</span> AR</button>
-      <a class="button button-small button-primary" href="#contact" data-i18n="navCta">Get started <span>↗</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="eyebrow">AI SYSTEMS · AUTOMATION · GROWTH</span></p>
-        <h1 data-i18n="heroTitle">Turn repetitive work into <span>intelligent systems.</span></h1>
-        <p class="hero-description" data-i18n="heroText">We build practical AI automation that helps businesses respond faster, organize leads, and spend less time on repetitive tasks.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#services" data-i18n="explore">Explore solutions <span>→</span></a>
-          <a class="button button-ghost" href="#contact"><span class="button-icon">↗</span><span data-i18n="talk">Talk to QSX AI</span></a>
-        </div>
-        <div class="hero-note"><span class="status-dot"></span><span data-i18n="heroNote">Built around your workflow. Designed to grow with you.</span></div>
-      </div>
-      <div class="hero-visual" aria-label="Illustration of an AI automation workflow">
-        <div class="visual-grid"></div>
-        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
-        <div class="flow-node node-wa"><span class="node-symbol">◉</span><small>MESSAGES</small></div>
-        <div class="flow-node node-mail"><span class="node-symbol">✉</span><small>EMAIL</small></div>
-        <div class="flow-node node-calendar"><span class="node-symbol">▦</span><small>BOOKINGS</small></div>
-        <div class="core-glow"></div>
-        <div class="core-card">
-          <div class="core-logo"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 45 40H28l-8-13-7 13H3L24 3Z" fill="currentColor"/><path d="m24 17 8 14h-8l-4-7 4-7Z" fill="#06101e"/></svg></div>
-          <strong>QSX AI</strong><span>Automation engine</span><div class="core-pulse"><i></i><i></i><i></i></div>
-        </div>
-        <div class="workflow-card workflow-one"><span class="workflow-icon cyan">↗</span><div><small>NEW LEAD</small><strong>Lead captured</strong></div><span class="mini-check">✓</span></div>
-        <div class="workflow-card workflow-two"><span class="workflow-icon violet">✉</span><div><small>AI ASSISTANT</small><strong>Response prepared</strong></div><span class="mini-check">✓</span></div>
-        <div class="workflow-card workflow-three"><span class="workflow-icon green">▦</span><div><small>FOLLOW-UP</small><strong>Next step organized</strong></div><span class="mini-check">✓</span></div>
-        <div class="visual-caption"><span class="status-dot"></span> WORKFLOW PREVIEW <span class="caption-line"></span> <span>01 / 03</span></div>
-      </div>
-    </section>
-
-    <section class="trust-strip section-wrap">
-      <span data-i18n="stripLabel">PRACTICAL AUTOMATION FOR EVERYDAY BUSINESS</span>
-      <div><span>AI ASSISTANTS</span><i></i><span>SMART WORKFLOWS</span><i></i><span>LEAD MANAGEMENT</span></div>
-    </section>
-
-    <section class="section-wrap section-block" id="services">
-      <div class="section-heading">
-        <div><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="servicesEyebrow">WHAT WE BUILD</span></p><h2 data-i18n="servicesTitle">Less busywork. <span>More momentum.</span></h2></div>
-        <p data-i18n="servicesText">Focused AI solutions for the tasks that slow your business down — designed around the way your team already works.</p>
-      </div>
-      <div class="service-grid">
-        <article class="service-card">
-          <div class="service-top"><span class="service-icon icon-blue">✳</span><span class="card-number">01</span></div>
-          <h3 data-i18n="service1Title">AI Assistants</h3><p data-i18n="service1Text">Helpful assistants to answer common questions, organize requests, and support your team.</p><a href="#contact" class="card-link" aria-label="Ask about AI assistants">↗</a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span class="service-icon icon-green">◉</span><span class="card-number">02</span></div>
-          <h3 data-i18n="service2Title">WhatsApp Automation</h3><p data-i18n="service2Text">Structure customer conversations, capture enquiries, and coordinate follow-ups.</p><a href="#contact" class="card-link" aria-label="Ask about WhatsApp automation">↗</a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span class="service-icon icon-purple">⌁</span><span class="card-number">03</span></div>
-          <h3 data-i18n="service3Title">Lead Management</h3><p data-i18n="service3Text">Keep potential customers organized and prepare more relevant outreach.</p><a href="#contact" class="card-link" aria-label="Ask about lead management">↗</a>
-        </article>
-        <article class="service-card">
-          <div class="service-top"><span class="service-icon icon-orange">⚙</span><span class="card-number">04</span></div>
-          <h3 data-i18n="service4Title">Business Workflows</h3><p data-i18n="service4Text">Connect repetitive steps across your tools to reduce manual work and missed handoffs.</p><a href="#contact" class="card-link" aria-label="Ask about business workflows">↗</a>
-        </article>
-      </div>
-    </section>
-
-    <section class="section-wrap solutions-section section-block" id="solutions">
-      <div class="section-heading">
-        <div><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="solutionsEyebrow">BUILT FOR REAL WORK</span></p><h2 data-i18n="solutionsTitle">Useful systems. <span>Clear outcomes.</span></h2></div>
-        <p data-i18n="solutionsText">Start with one recurring problem, build a solution that fits, and improve it as your needs change.</p>
-      </div>
-      <div class="solution-panel">
-        <div class="solution-copy"><span class="solution-label">QSX / SYSTEM 01</span><h3 data-i18n="solutionTitle">From first enquiry to organized follow-up.</h3><p data-i18n="solutionText">Capture incoming enquiries, keep details in one place, prepare tailored responses, and make the next action easy to track.</p><a href="#contact" class="text-link" data-i18n="solutionLink">Discuss your workflow <span>↗</span></a></div>
-        <div class="solution-steps">
-          <div class="solution-step"><span class="step-icon">01</span><div><strong data-i18n="solutionStep1">Capture</strong><small data-i18n="solutionStep1Text">Collect enquiry details</small></div><span class="step-status">●</span></div>
-          <div class="solution-connector"></div>
-          <div class="solution-step"><span class="step-icon">02</span><div><strong data-i18n="solutionStep2">Organize</strong><small data-i18n="solutionStep2Text">Keep information structured</small></div><span class="step-status">●</span></div>
-          <div class="solution-connector"></div>
-          <div class="solution-step"><span class="step-icon">03</span><div><strong data-i18n="solutionStep3">Follow up</strong><small data-i18n="solutionStep3Text">Make next steps visible</small></div><span class="step-status">●</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section-wrap section-block" id="process">
-      <div class="center-heading"><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="processEyebrow">HOW IT WORKS</span></p><h2 data-i18n="processTitle">A clear path from idea <span>to automation.</span></h2><p data-i18n="processText">Simple, collaborative, and focused on your actual business needs.</p></div>
-      <div class="process-grid">
-        <article class="process-card"><span class="process-number">01</span><span class="process-icon">⌕</span><h3 data-i18n="process1Title">Discover</h3><p data-i18n="process1Text">We learn about your goals, tools, and repetitive tasks.</p></article>
-        <div class="process-arrow">→</div>
-        <article class="process-card"><span class="process-number">02</span><span class="process-icon">◇</span><h3 data-i18n="process2Title">Build</h3><p data-i18n="process2Text">We shape a practical solution around your workflow.</p></article>
-        <div class="process-arrow">→</div>
-        <article class="process-card"><span class="process-number">03</span><span class="process-icon">↗</span><h3 data-i18n="process3Title">Improve</h3><p data-i18n="process3Text">We review how it works and identify what to refine next.</p></article>
-      </div>
-    </section>
-
-    <section class="section-wrap section-block faq-section" id="faq">
-      <div class="faq-intro"><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="faqEyebrow">GOOD TO KNOW</span></p><h2 data-i18n="faqTitle">Questions, <span>answered.</span></h2><p data-i18n="faqIntro">Not sure where to start? Here are a few basics.</p></div>
-      <div class="faq-list">
-        <details><summary data-i18n="faq1Q">What kind of businesses can use QSX AI?</summary><p data-i18n="faq1A">We can explore automation opportunities for service businesses, clinics, agencies, and other teams with repetitive customer or operational tasks.</p></details>
-        <details><summary data-i18n="faq2Q">Do I need to replace my current tools?</summary><p data-i18n="faq2A">Not necessarily. The first step is to understand your existing workflow and see which tools can be connected or improved.</p></details>
-        <details><summary data-i18n="faq3Q">How do we get started?</summary><p data-i18n="faq3A">Send us a short description of the task you want to improve. We can discuss the goal, scope, and a suitable next step.</p></details>
-        <details><summary data-i18n="faq4Q">Can you tailor a solution to my business?</summary><p data-i18n="faq4A">Yes. Each proposed workflow should be shaped around your process, requirements, and available tools.</p></details>
-      </div>
-    </section>
-
-    <section class="section-wrap contact-section" id="contact">
-      <div class="contact-glow"></div>
-      <div class="contact-content"><p class="eyebrow"><span class="eyebrow-dot"></span><span data-i18n="contactEyebrow">READY TO SIMPLIFY YOUR WORK?</span></p><h2 data-i18n="contactTitle">Let’s build something <span>useful.</span></h2><p data-i18n="contactText">Tell us what takes too much time in your business. We’ll explore whether AI automation can help.</p></div>
-      <div class="contact-actions"><a class="button button-primary" href="mailto:qsxai.team@gmail.com?subject=QSX%20AI%20%E2%80%94%20Let%E2%80%99s%20talk" data-i18n="emailCta">Email QSX AI <span>↗</span></a><span class="contact-email">qsxai.team@gmail.com</span></div>
-    </section>
-  </main>
-
-  <footer class="site-footer section-wrap"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 3 45 40H28l-8-13-7 13H3L24 3Z" fill="currentColor"/><path d="m24 17 8 14h-8l-4-7 4-7Z" fill="#06101e"/></svg></span><span>QSX <b>AI</b></span></a><p data-i18n="footerText">Intelligent systems for everyday business.</p><span>© <span id="year"></span> QSX AI. <span data-i18n="rights">All rights reserved.</span></span></footer>
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="header"><a class="brand" href="#home"><span class="logo">Q</span> QSX <b>AI</b></a><button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button><nav id="nav"><a href="#services" data-en="Services" data-ar="الخدمات">Services</a><a href="#solutions" data-en="Solutions" data-ar="الحلول">Solutions</a><a href="#process" data-en="How it works" data-ar="كيف نعمل">How it works</a><a href="#faq" data-en="FAQ" data-ar="الأسئلة الشائعة">FAQ</a></nav><div class="actions"><button id="langBtn" class="lang">عربي</button><a class="button primary" href="#contact" data-en="Let’s talk ↗" data-ar="تواصل معنا ↗">Let’s talk ↗</a></div></header>
+<main id="home">
+<section class="hero wrap"><div class="hero-copy"><div class="eyebrow"><i></i><span data-en="AI SYSTEMS · AUTOMATION · BUSINESS GROWTH" data-ar="الذكاء الاصطناعي · الأتمتة · نمو الأعمال">AI SYSTEMS · AUTOMATION · BUSINESS GROWTH</span></div><h1 data-en="Make your business work <em>smarter.</em>" data-ar="خلّي شغلك يمشي <em>بذكاء أكتر.</em>">Make your business work <em>smarter.</em></h1><p data-en="QSX AI designs practical AI assistants and automation workflows that help teams save time, respond faster, and keep everyday work organized." data-ar="تطوّر QSX AI مساعدين ذكيين وأنظمة أتمتة عملية تساعد الشركات على توفير الوقت والرد أسرع وتنظيم الشغل اليومي.">QSX AI designs practical AI assistants and automation workflows that help teams save time, respond faster, and keep everyday work organized.</p><div class="hero-actions"><a class="button primary" href="#services" data-en="Explore services ↘" data-ar="اكتشف الخدمات ↘">Explore services ↘</a><a class="button secondary" href="#contact" data-en="Build with QSX AI ↗" data-ar="ابدأ مع QSX AI ↗">Build with QSX AI ↗</a></div><div class="trust"><span>✦</span><span data-en="Designed around your workflow. Built to grow with you." data-ar="حلول مصممة على طريقة شغلك وقابلة للتوسع معاك.">Designed around your workflow. Built to grow with you.</span></div></div>
+<div class="visual" aria-label="Animated automation workflow"><div class="visual-head"><span><i class="live-dot"></i> SYSTEM STATUS</span><span>QSX / 01</span></div><svg class="connections" viewBox="0 0 500 420" preserveAspectRatio="none" aria-hidden="true"><path class="flow-path path-a" d="M78 126 C130 126 130 205 190 205"/><path class="flow-path path-b" d="M420 142 C360 142 365 205 310 205"/><path class="flow-path path-c" d="M100 325 C155 325 145 250 190 245"/><path class="flow-path path-d" d="M310 245 C365 245 360 315 425 315"/><circle class="packet packet-a" r="4"><animateMotion dur="3.5s" repeatCount="indefinite" path="M78 126 C130 126 130 205 190 205"/></circle><circle class="packet packet-b" r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M420 142 C360 142 365 205 310 205"/></circle><circle class="packet packet-c" r="4"><animateMotion dur="4.5s" repeatCount="indefinite" path="M100 325 C155 325 145 250 190 245"/></circle><circle class="packet packet-d" r="4"><animateMotion dur="3.8s" repeatCount="indefinite" path="M310 245 C365 245 360 315 425 315"/></circle></svg><div class="orbit o1"></div><div class="orbit o2"></div><div class="core"><span class="core-q">Q</span><b>QSX AI</b><small>INTELLIGENCE ENGINE</small><div class="bars"><i></i><i></i><i></i><i></i><i></i></div></div><div class="node n1"><span>✉</span><small>MESSAGES</small><b class="node-status">●</b></div><div class="node n2"><span>⌘</span><small>WORKFLOW</small><b class="node-status">●</b></div><div class="node n3"><span>↗</span><small>LEADS</small><b class="node-status">●</b></div><div class="task t1"><span>✓</span><div><small>NEW ENQUIRY</small><b>Lead organized</b></div><em>LIVE</em></div><div class="task t2"><span>✓</span><div><small>AI ASSISTANT</small><b>Reply prepared</b></div><em>DONE</em></div><div class="visual-foot"><span>INTELLIGENT WORKFLOWS</span><span>01 — 03</span></div></div></section>
+<div class="ticker"><span>AI ASSISTANTS</span> ✳ <span>SMART AUTOMATION</span> ✳ <span>LEAD MANAGEMENT</span> ✳ <span>BUSINESS SYSTEMS</span></div>
+<section class="section wrap" id="services"><div class="section-head"><div><div class="eyebrow"><i></i><span data-en="WHAT WE DO" data-ar="ماذا نقدم">WHAT WE DO</span></div><h2 data-en="Tools that move work <em>forward.</em>" data-ar="أدوات تدفع شغلك <em>للأمام.</em>">Tools that move work <em>forward.</em></h2></div><p data-en="We turn repetitive tasks into connected workflows, so your team can focus on the work that matters." data-ar="نحوّل المهام المتكررة إلى خطوات مترابطة، علشان فريقك يركز على الشغل الأهم.">We turn repetitive tasks into connected workflows, so your team can focus on the work that matters.</p></div><div class="cards"><article class="card reveal"><div class="card-icon cyan">✳</div><small>01 / AI</small><h3 data-en="AI Assistants" data-ar="مساعدو الذكاء الاصطناعي">AI Assistants</h3><p data-en="Support customers, answer common questions, and organize incoming requests." data-ar="ساعد العملاء، ورد على الأسئلة المتكررة، ونظّم الطلبات الواردة.">Support customers, answer common questions, and organize incoming requests.</p><a href="#contact" data-en="Explore service ↗" data-ar="اعرف المزيد ↗">Explore service ↗</a></article><article class="card reveal"><div class="card-icon green">◉</div><small>02 / AUTO</small><h3 data-en="Workflow Automation" data-ar="أتمتة سير العمل">Workflow Automation</h3><p data-en="Connect everyday tools and reduce repetitive manual steps and missed follow-ups." data-ar="اربط أدواتك اليومية وقلّل الخطوات اليدوية ومشاكل المتابعة.">Connect everyday tools and reduce repetitive manual steps and missed follow-ups.</p><a href="#contact" data-en="Explore service ↗" data-ar="اعرف المزيد ↗">Explore service ↗</a></article><article class="card reveal"><div class="card-icon purple">⌁</div><small>03 / CRM</small><h3 data-en="Lead Management" data-ar="إدارة العملاء المحتملين">Lead Management</h3><p data-en="Keep enquiries organized and make the next customer action easy to track." data-ar="نظّم استفسارات العملاء وخلي متابعة كل عميل أسهل.">Keep enquiries organized and make the next customer action easy to track.</p><a href="#contact" data-en="Explore service ↗" data-ar="اعرف المزيد ↗">Explore service ↗</a></article><article class="card reveal"><div class="card-icon orange">⌘</div><small>04 / OPS</small><h3 data-en="Business Systems" data-ar="أنظمة إدارة الأعمال">Business Systems</h3><p data-en="Practical systems for tracking tasks, requests, operations, and team information." data-ar="أنظمة عملية لمتابعة المهام والطلبات والعمليات ومعلومات الفريق.">Practical systems for tracking tasks, requests, operations, and team information.</p><a href="#contact" data-en="Explore service ↗" data-ar="اعرف المزيد ↗">Explore service ↗</a></article></div></section>
+<section class="feature" id="solutions"><div class="wrap feature-grid"><div class="reveal"><div class="eyebrow"><i></i><span data-en="A CONNECTED APPROACH" data-ar="منهج مترابط">A CONNECTED APPROACH</span></div><h2 data-en="From scattered tasks to <em>one clear system.</em>" data-ar="من مهام متفرقة إلى <em>نظام واضح.</em>">From scattered tasks to <em>one clear system.</em></h2><p data-en="A useful automation fits your real process. We understand the problem, then shape a workflow that makes information easier to manage and act on." data-ar="الأتمتة المفيدة لازم تناسب شغلك الحقيقي. بنفهم المشكلة ونصمم خطوات تسهّل تنظيم المعلومات والتعامل معاها.">A useful automation fits your real process. We understand the problem, then shape a workflow that makes information easier to manage and act on.</p><a class="text-link" href="#contact" data-en="Discuss your workflow ↗" data-ar="ناقش احتياجك ↗">Discuss your workflow ↗</a></div><div class="workflow reveal"><div class="wf-head">QSX / WORKFLOW PREVIEW <span><i class="live-dot"></i> ACTIVE FLOW</span></div><div class="wf-row"><i>↘</i><div><b data-en="Capture" data-ar="استقبال">Capture</b><small data-en="Collect enquiries from your channels" data-ar="اجمع الاستفسارات من قنواتك">Collect enquiries from your channels</small></div><label>01</label></div><div class="connector"></div><div class="wf-row"><i class="violet">✳</i><div><b data-en="Organize" data-ar="تنظيم">Organize</b><small data-en="Structure the details automatically" data-ar="نظّم التفاصيل تلقائيًا">Structure the details automatically</small></div><label>02</label></div><div class="connector"></div><div class="wf-row"><i class="green">✓</i><div><b data-en="Take action" data-ar="اتخاذ إجراء">Take action</b><small data-en="Prepare a reply or next step" data-ar="جهّز الرد أو الخطوة التالية">Prepare a reply or next step</small></div><label>03</label></div><div class="wf-foot">● <span data-en="One workflow. Better visibility." data-ar="خطوات مترابطة ورؤية أوضح.">One workflow. Better visibility.</span></div></div></div></section>
+<section class="section wrap"><div class="center reveal"><div class="eyebrow"><i></i><span data-en="WHY QSX AI" data-ar="لماذا QSX AI">WHY QSX AI</span></div><h2 data-en="Built for real work. <em>Not more complexity.</em>" data-ar="حلول للشغل الحقيقي، <em>مش تعقيد زيادة.</em>">Built for real work. <em>Not more complexity.</em></h2><p data-en="Technology should make your day simpler: practical solutions, clear requirements, and room to grow." data-ar="التكنولوجيا المفروض تسهّل يومك: حلول عملية ومتطلبات واضحة وقابلية للتطوير.">Technology should make your day simpler: practical solutions, clear requirements, and room to grow.</p></div><div class="benefits"><article class="reveal"><span>✦</span><h3 data-en="Practical by design" data-ar="عملية من البداية">Practical by design</h3><p data-en="Solutions shaped around a real task, not technology for its own sake." data-ar="حلول مبنية على مهمة حقيقية، مش لمجرد استخدام التكنولوجيا.">Solutions shaped around a real task, not technology for its own sake.</p></article><article class="reveal"><span>◎</span><h3 data-en="Clear communication" data-ar="تواصل واضح">Clear communication</h3><p data-en="Understand the scope and next steps before building." data-ar="افهم نطاق العمل والخطوات القادمة قبل التنفيذ.">Understand the scope and next steps before building.</p></article><article class="reveal"><span>↗</span><h3 data-en="Room to grow" data-ar="قابلية للتوسع">Room to grow</h3><p data-en="Start with one workflow and improve it as your needs evolve." data-ar="ابدأ بسير عمل واحد وطوّره مع تغيّر احتياجاتك.">Start with one workflow and improve it as your needs evolve.</p></article></div></section>
+<section class="process" id="process"><div class="wrap"><div class="center reveal"><div class="eyebrow"><i></i><span data-en="HOW IT WORKS" data-ar="كيف نعمل">HOW IT WORKS</span></div><h2 data-en="A clear path from idea <em>to implementation.</em>" data-ar="خطوات واضحة من الفكرة <em>للتنفيذ.</em>">A clear path from idea <em>to implementation.</em></h2><p data-en="A straightforward process keeps the project focused and useful." data-ar="خطوات مباشرة بتحافظ على تركيز المشروع وبتخلي النتيجة مفيدة.">A straightforward process keeps the project focused and useful.</p></div><div class="steps"><article class="reveal"><small>01</small><span>⌕</span><h3 data-en="Discover" data-ar="نفهم احتياجك">Discover</h3><p data-en="Understand your goal, tools, and the task to improve." data-ar="نفهم هدفك وأدواتك والمهمة اللي عايز تطورها.">Understand your goal, tools, and the task to improve.</p></article><article class="reveal"><small>02</small><span>◇</span><h3 data-en="Design" data-ar="نصمم الحل">Design</h3><p data-en="Map the workflow and agree on a practical scope." data-ar="نرسم خطوات العمل ونتفق على نطاق عملي.">Map the workflow and agree on a practical scope.</p></article><article class="reveal"><small>03</small><span>⌘</span><h3 data-en="Build" data-ar="نبني النظام">Build</h3><p data-en="Implement the solution and test its key steps." data-ar="ننّفذ الحل ونختبر الخطوات الأساسية.">Implement the solution and test its key steps.</p></article><article class="reveal"><small>04</small><span>↗</span><h3 data-en="Improve" data-ar="نطوّر النتيجة">Improve</h3><p data-en="Identify improvements as your needs evolve." data-ar="نحدد التحسينات مع تطور احتياجاتك.">Identify improvements as your needs evolve.</p></article></div></div></section>
+<section class="section wrap faq" id="faq"><div class="reveal"><div class="eyebrow"><i></i><span data-en="GOOD TO KNOW" data-ar="معلومات مهمة">GOOD TO KNOW</span></div><h2 data-en="Questions, <em>answered.</em>" data-ar="أسئلة <em>وإجابات.</em>">Questions, <em>answered.</em></h2><p data-en="A few basics to help you decide where to start." data-ar="إجابات سريعة تساعدك تعرف تبدأ منين.">A few basics to help you decide where to start.</p><a class="text-link" href="#contact" data-en="Still have a question? ↗" data-ar="عندك سؤال تاني؟ ↗">Still have a question? ↗</a></div><div class="faq-list reveal"><details><summary data-en="What can QSX AI help with?" data-ar="QSX AI ممكن تساعدني في إيه؟">What can QSX AI help with?</summary><p data-en="AI assistants, workflow automation, lead organization, and repetitive business processes." data-ar="مساعدين ذكيين وأتمتة سير العمل وتنظيم العملاء والعمليات المتكررة.">AI assistants, workflow automation, lead organization, and repetitive business processes.</p></details><details><summary data-en="Do I need to replace my existing tools?" data-ar="هل لازم أغيّر أدواتي الحالية؟">Do I need to replace my existing tools?</summary><p data-en="Not necessarily. We review your process and see whether existing tools can be connected or improved." data-ar="مش بالضرورة؛ بنراجع شغلك ونشوف إمكانية ربط الأدوات الموجودة أو تحسينها.">Not necessarily. We review your process and see whether existing tools can be connected or improved.</p></details><details><summary data-en="Can the solution be customized?" data-ar="هل ممكن نخصص الحل؟">Can the solution be customized?</summary><p data-en="The scope can be tailored to your goals and workflow after discussing the requirements." data-ar="ممكن نحدد الحل حسب أهدافك وطريقة شغلك بعد مناقشة المتطلبات.">The scope can be tailored to your goals and workflow after discussing the requirements.</p></details><details><summary data-en="How do I get started?" data-ar="أبدأ إزاي؟">How do I get started?</summary><p data-en="Send a short description of the task or problem you want to improve." data-ar="ابعت وصف مختصر للمهمة أو المشكلة اللي عايز تحسّنها.">Send a short description of the task or problem you want to improve.</p></details></div></section>
+<section class="contact wrap reveal" id="contact"><div><div class="eyebrow"><i></i><span data-en="LET’S BUILD SOMETHING USEFUL" data-ar="خلّينا نبني حاجة مفيدة">LET’S BUILD SOMETHING USEFUL</span></div><h2 data-en="Your next workflow could be <em>simpler.</em>" data-ar="ممكن نخلي شغلك <em>أسهل.</em>">Your next workflow could be <em>simpler.</em></h2><p data-en="Tell us what takes too much time in your business. Let’s discuss a practical next step." data-ar="قولنا إيه اللي بياخد وقت زيادة في شغلك وخلّينا نناقش حل عملي.">Tell us what takes too much time in your business. Let’s discuss a practical next step.</p></div><div class="contact-cta"><a class="button primary" href="mailto:qsxai.team@gmail.com?subject=QSX%20AI%20Inquiry" data-en="Email QSX AI ↗" data-ar="راسل QSX AI ↗">Email QSX AI ↗</a><span>qsxai.team@gmail.com</span><small data-en="Contact us by email to discuss your project." data-ar="تواصل معنا عبر البريد لمناقشة مشروعك.">Contact us by email to discuss your project.</small></div></section></main>
+<footer class="footer wrap"><a class="brand" href="#home"><span class="logo">Q</span> QSX <b>AI</b></a><p data-en="Intelligent systems. Real business impact." data-ar="أنظمة ذكية. تأثير حقيقي على الأعمال.">Intelligent systems. Real business impact.</p><span>© <span id="year"></span> QSX AI · <span data-en="All rights reserved." data-ar="جميع الحقوق محفوظة.">All rights reserved.</span></span></footer>
+<script src="script.js"></script></body></html>
