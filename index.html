@@ -1,118 +1,97 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#050b16">
-  <meta name="description" content="QSX AI builds smart websites, AI assistants, and connected business automations.">
-  <title>QSX AI — Build Smarter. Work Faster.</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#050b16">
+<meta name="description" content="QSX AI builds smarter websites, AI assistants and connected business automations.">
+<title>QSX AI — Build Smarter, Work Faster</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
-  <header class="site-header">
-    <a class="brand" href="#home" aria-label="QSX AI home"><span class="brand-mark">Q</span><span>QSX<span class="cyan">AI</span></span></a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
-    <nav class="nav" id="nav">
-      <a href="#home" data-i18n="navHome">Home</a><a href="#services" data-i18n="navServices">Services</a><a href="#demo" data-i18n="navDemo">Live demo</a><a href="#work" data-i18n="navWork">Our work</a><a href="#pricing" data-i18n="navPricing">Pricing</a>
-      <button class="language-switch" id="languageSwitch" aria-label="Switch language"><span class="lang-current">EN</span><span class="lang-divider">/</span><span>ع</span></button>
-      <a class="nav-cta" href="#contact" data-i18n="navStart">Start a project <span>↗</span></a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="hero section-wrap" id="home">
-      <div class="hero-copy">
-        <div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="eyebrow">AI · AUTOMATION · WEB EXPERIENCES</span></div>
-        <h1 data-i18n="heroTitle">Build smarter.<br>Work <span class="gradient-text">faster.</span></h1>
-        <p class="hero-description" data-i18n="heroDesc">We create modern websites and connected AI automations that help your business save time, win customers, and grow with confidence.</p>
-        <div class="hero-actions"><a class="button button-primary" href="#contact" data-i18n="heroCta">Let’s build something <span>↗</span></a><button class="button button-ghost" id="watchDemo"><span class="play-icon">▶</span><span data-i18n="watchDemo">See how it works</span></button></div>
-        <div class="trust-row"><div class="trust-avatars"><span>Q</span><span>AI</span><span>↗</span></div><p data-i18n="trustText">One partner for your website, workflows, and customer journey.</p></div>
-      </div>
-      <div class="hero-visual" aria-label="Animated automation workflow preview">
-        <div class="visual-glow"></div>
-        <div class="visual-top"><span><i class="window-dot"></i><i class="window-dot"></i><i class="window-dot"></i></span><span class="live-pill"><i></i><span data-i18n="livePreview">LIVE PREVIEW</span></span></div>
-        <div class="flow-stage">
-          <svg class="flow-lines" viewBox="0 0 540 340" preserveAspectRatio="none" aria-hidden="true">
-            <path d="M85 90 C145 90 140 165 205 165 S270 90 330 90 S390 165 455 165" />
-            <path d="M205 165 C205 230 270 245 330 245" />
-            <circle class="travel-dot dot-a" r="4"><animateMotion dur="4s" repeatCount="indefinite" path="M85 90 C145 90 140 165 205 165 S270 90 330 90 S390 165 455 165"/></circle>
-            <circle class="travel-dot dot-b" r="4"><animateMotion dur="3s" repeatCount="indefinite" path="M205 165 C205 230 270 245 330 245"/></circle>
-          </svg>
-          <div class="node node-website"><span class="node-icon">⌘</span><b data-i18n="nodeWebsite">Website</b><small data-i18n="nodeEntry">New enquiry</small></div>
-          <div class="node node-ai"><span class="node-icon">✳</span><b data-i18n="nodeAI">AI assistant</b><small data-i18n="nodeReply">Instant reply</small></div>
-          <div class="node node-crm"><span class="node-icon">▤</span><b>CRM</b><small data-i18n="nodeSaved">Lead saved</small></div>
-          <div class="node node-follow"><span class="node-icon">➤</span><b data-i18n="nodeFollow">Follow-up</b><small data-i18n="nodeAuto">Automated</small></div>
-          <div class="mini-dashboard">
-            <div class="dash-heading"><span class="dash-logo">Q</span><span><b>QSX Flow</b><small data-i18n="dashSub">Your business, connected</small></span><span class="dash-menu">•••</span></div>
-            <div class="dash-metrics"><div><small data-i18n="metricTasks">Tasks automated</small><b>24 <em>↗</em></b><div class="metric-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div><small data-i18n="metricTime">Time saved</small><b>12.5h</b><span class="metric-caption" data-i18n="thisWeek">this week</span></div></div>
-            <div class="dash-activity"><span class="activity-check">✓</span><span data-i18n="activityText">New customer enquiry processed</span><span class="activity-time">now</span></div>
+<header class="topbar">
+  <a class="brand" href="#home" aria-label="QSX AI home">QSX<span>AI</span></a>
+  <nav class="nav" id="nav">
+    <a href="#home" data-i18n="navHome">Home</a><a href="#services" data-i18n="navServices">Services</a><a href="#workflow" data-i18n="navWorkflow">Workflow</a><a href="#projects" data-i18n="navProjects">Projects</a>
+  </nav>
+  <div class="nav-actions">
+    <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN <i></i> AR</button>
+    <a class="btn btn-small" href="#contact" data-i18n="start">Start a Project ↗</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-glow glow-a"></div><div class="hero-glow glow-b"></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">AI · Automation · Websites</span></div>
+    <h1 data-i18n="headline">Build Smarter<br>Work <em>Faster</em></h1>
+    <p class="hero-lead" data-i18n="lead">We build modern websites and connected AI automations that help businesses save time, serve customers, and grow.</p>
+    <div class="hero-actions"><a class="btn" href="#contact" data-i18n="start">Start a Project ↗</a><a class="btn btn-ghost" href="#services" data-i18n="explore">Explore Services ↓</a></div>
+    <div class="hero-proof"><div><b>01</b><span data-i18n="proof1">Built around your business</span></div><div><b>02</b><span data-i18n="proof2">Connected, not complicated</span></div></div>
+  </div>
+  <div class="device-stage" id="deviceStage" aria-label="QSX AI connected workflow illustration">
+    <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+    <svg class="connections" viewBox="0 0 640 520" aria-hidden="true">
+      <path class="wire wire-blue" d="M320 245 C240 190 190 145 130 130"/>
+      <path class="wire wire-cyan" d="M320 245 C390 185 425 140 500 130"/>
+      <path class="wire wire-purple" d="M320 245 C420 275 470 325 530 365"/>
+      <path class="wire wire-green" d="M320 245 C230 300 175 340 105 370"/>
+      <circle class="travel-dot dot1" r="4"><animateMotion dur="3s" repeatCount="indefinite" path="M320 245 C240 190 190 145 130 130"/></circle>
+      <circle class="travel-dot dot2" r="4"><animateMotion dur="3.8s" repeatCount="indefinite" path="M320 245 C390 185 425 140 500 130"/></circle>
+      <circle class="travel-dot dot3" r="4"><animateMotion dur="4.2s" repeatCount="indefinite" path="M320 245 C420 275 470 325 530 365"/></circle>
+      <circle class="travel-dot dot4" r="4"><animateMotion dur="3.5s" repeatCount="indefinite" path="M320 245 C230 300 175 340 105 370"/></circle>
+    </svg>
+    <div class="service-node node-web"><span class="node-icon">◎</span><b data-i18n="nodeWeb">Website</b><small data-i18n="nodeWebSub">Your digital front door</small></div>
+    <div class="service-node node-wa"><span class="node-icon">◉</span><b>WhatsApp</b><small data-i18n="nodeWaSub">Customer conversations</small></div>
+    <div class="service-node node-crm"><span class="node-icon">◇</span><b>CRM</b><small data-i18n="nodeCrmSub">Keep every lead in view</small></div>
+    <div class="service-node node-auto"><span class="node-icon">✳</span><b data-i18n="nodeAuto">Automation</b><small data-i18n="nodeAutoSub">Work that runs for you</small></div>
+    <div class="laptop-wrap" id="laptopWrap">
+      <div class="laptop-screen">
+        <div class="screen-top"><span class="screen-brand">QSX<span>AI</span></span><span class="screen-live"><i></i> SYSTEM LIVE</span></div>
+        <div class="screen-title" data-i18n="dashTitle">Your business, connected.</div>
+        <div class="dashboard">
+          <div class="dash-side"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="dash-main"><div class="dash-cards"><span><small>LEADS</small><b>1,284</b><i>↗ 18%</i></span><span><small>WORKFLOWS</small><b>08</b><i>ACTIVE</i></span></div>
+            <div class="chart"><div class="chart-label" data-i18n="activity">Automation activity</div><svg viewBox="0 0 300 85" preserveAspectRatio="none"><defs><linearGradient id="chartFill" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#00d9ff" stop-opacity=".35"/><stop offset="1" stop-color="#00d9ff" stop-opacity="0"/></linearGradient></defs><path d="M0 65 C25 62 35 48 55 55 S90 72 112 43 S145 54 165 32 S198 50 220 25 S260 42 300 8 L300 85 L0 85Z" fill="url(#chartFill)"/><path d="M0 65 C25 62 35 48 55 55 S90 72 112 43 S145 54 165 32 S198 50 220 25 S260 42 300 8" fill="none" stroke="#15dafa" stroke-width="2"/></svg></div>
+            <div class="task-row"><i class="task-check">✓</i><span data-i18n="task1">New lead captured</span><b>Done</b></div><div class="task-row"><i class="task-check">✓</i><span data-i18n="task2">Follow-up scheduled</span><b>Done</b></div>
           </div>
-          <div class="floating-chip chip-left"><span>✦</span><div><b data-i18n="chipSmart">Smart systems</b><small data-i18n="chipAlways">Working in the background</small></div></div>
-          <div class="floating-chip chip-right"><span>↗</span><div><b data-i18n="chipConnected">Everything connected</b><small data-i18n="chipFlow">One seamless flow</small></div></div>
         </div>
-      </div>
-      <div class="hero-bottom"><span data-i18n="bottomLabel">BUILT AROUND YOUR BUSINESS</span><div class="bottom-logos"><span>WEB<span class="cyan">SITE</span></span><span>✳ AI</span><span>↗ AUTOMATION</span><span>▤ CRM</span><span>◉ INTEGRATIONS</span></div></div>
-    </section>
-
-    <section class="services section-wrap section-space" id="services">
-      <div class="section-heading"><div><div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="servicesEyebrow">WHAT WE DO</span></div><h2 data-i18n="servicesTitle">More than a chatbot.<br><span class="muted-heading">A smarter way to work.</span></h2></div><p data-i18n="servicesDesc">From your first website to the systems behind it, we design connected digital experiences that do real work.</p></div>
-      <div class="service-grid">
-        <article class="service-card card-highlight"><div class="card-top"><span class="service-icon icon-cyan">⌘</span><span class="card-number">01 / WEB</span></div><h3 data-i18n="service1Title">Websites & landing pages</h3><p data-i18n="service1Desc">Fast, responsive websites that make your brand stand out and turn visits into enquiries.</p><a href="#contact" class="text-link" data-i18n="explore">Explore service <span>↗</span></a><div class="card-orbit orbit-one"></div></article>
-        <article class="service-card"><div class="card-top"><span class="service-icon icon-purple">✳</span><span class="card-number">02 / AI</span></div><h3 data-i18n="service2Title">AI assistants & chatbots</h3><p data-i18n="service2Desc">Helpful assistants for WhatsApp, websites, and customer questions—designed around your process.</p><a href="#contact" class="text-link" data-i18n="explore">Explore service <span>↗</span></a><div class="card-orbit orbit-two"></div></article>
-        <article class="service-card"><div class="card-top"><span class="service-icon icon-blue">⌘</span><span class="card-number">03 / FLOW</span></div><h3 data-i18n="service3Title">Automation & integrations</h3><p data-i18n="service3Desc">Connect forms, email, sheets, CRM, and messaging to reduce repetitive manual work.</p><a href="#contact" class="text-link" data-i18n="explore">Explore service <span>↗</span></a><div class="card-orbit orbit-three"></div></article>
-        <article class="service-card"><div class="card-top"><span class="service-icon icon-green">▤</span><span class="card-number">04 / OPS</span></div><h3 data-i18n="service4Title">Business systems</h3><p data-i18n="service4Desc">Custom dashboards and lightweight tools that help your team see what matters.</p><a href="#contact" class="text-link" data-i18n="explore">Explore service <span>↗</span></a><div class="card-orbit orbit-four"></div></article>
-      </div>
-    </section>
-
-    <section class="demo-section section-wrap section-space" id="demo">
-      <div class="demo-copy"><div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="demoEyebrow">TRY THE EXPERIENCE</span></div><h2 data-i18n="demoTitle">See a workflow<br>come to life.</h2><p data-i18n="demoDesc">Tap play and watch a customer enquiry move through a connected system—from the first message to a ready-to-follow-up lead.</p><button class="button button-primary" id="playWorkflow"><span class="play-icon">▶</span><span data-i18n="playWorkflow">Play workflow</span></button><p class="demo-note" data-i18n="demoNote">Interactive preview · No sign-up needed</p></div>
-      <div class="workflow-demo" id="workflowDemo">
-        <div class="demo-header"><span><i class="live-indicator"></i><span data-i18n="workflowPreview">WORKFLOW PREVIEW</span></span><span class="demo-state" id="demoState" data-i18n="readyState">READY TO RUN</span></div>
-        <div class="workflow-track">
-          <div class="workflow-step" data-step="0"><div class="step-icon">☏</div><b data-i18n="step1">New enquiry</b><small data-i18n="step1Sub">Website / WhatsApp</small><span class="step-status" data-i18n="waiting">Waiting</span></div>
-          <div class="track-arrow">→</div>
-          <div class="workflow-step" data-step="1"><div class="step-icon">✳</div><b data-i18n="step2">AI assistant</b><small data-i18n="step2Sub">Understands request</small><span class="step-status" data-i18n="waiting">Waiting</span></div>
-          <div class="track-arrow">→</div>
-          <div class="workflow-step" data-step="2"><div class="step-icon">▤</div><b data-i18n="step3">Save to CRM</b><small data-i18n="step3Sub">Organize customer data</small><span class="step-status" data-i18n="waiting">Waiting</span></div>
-          <div class="track-arrow">→</div>
-          <div class="workflow-step" data-step="3"><div class="step-icon">➤</div><b data-i18n="step4">Follow-up</b><small data-i18n="step4Sub">Next action prepared</small><span class="step-status" data-i18n="waiting">Waiting</span></div>
-        </div>
-        <div class="demo-log"><div class="log-avatar">Q</div><div><b id="logTitle" data-i18n="logReady">Your workflow is ready</b><p id="logText" data-i18n="logReadyDesc">Press “Play workflow” to see each step run.</p></div><span class="log-spark">✦</span></div>
-        <div class="demo-footer"><span>QSX <b>FLOW</b></span><span><i></i><span data-i18n="demoSimulated">SIMULATED DEMO</span></span></div>
-      </div>
-    </section>
-
-    <section class="showcase section-wrap section-space" id="work">
-      <div class="section-heading"><div><div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="workEyebrow">MADE FOR REAL WORK</span></div><h2 data-i18n="workTitle">One connected vision.<br><span class="muted-heading">Different ways to use it.</span></h2></div><p data-i18n="workDesc">Every business is different. We shape the experience around your customers, your team, and the work you need done.</p></div>
-      <div class="project-grid">
-        <article class="project-card project-large"><div class="project-art art-gym"><div class="mock-browser"><div class="mock-bar"><i></i><i></i><i></i><span>FIT / MEMBER PORTAL</span></div><div class="mock-content"><div class="mock-sidebar"></div><div class="mock-panels"><div class="mock-hero"></div><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-chart"></div></div></div></div></div><div class="project-info"><span class="project-type" data-i18n="projectTypeWeb">WEB PLATFORM</span><h3 data-i18n="projectGym">Gym management portal</h3><p data-i18n="projectGymDesc">Memberships, renewals, and business visibility in one place.</p><span class="project-arrow">↗</span></div></article>
-        <article class="project-card"><div class="project-art art-store"><div class="store-window"><span class="store-sun"></span><div class="store-shelf"><i></i><i></i><i></i></div><div class="store-shelf second"><i></i><i></i><i></i></div></div></div><div class="project-info"><span class="project-type" data-i18n="projectTypeSite">WEBSITE</span><h3 data-i18n="projectStore">Brand & online store</h3><p data-i18n="projectStoreDesc">A polished storefront built for browsing and enquiries.</p><span class="project-arrow">↗</span></div></article>
-        <article class="project-card"><div class="project-art art-flow"><div class="mini-flow-node">FORM</div><span class="mini-flow-line"></span><div class="mini-flow-node bright">AI</div><span class="mini-flow-line"></span><div class="mini-flow-node purple">CRM</div><span class="mini-flow-line"></span><div class="mini-flow-node green">MAIL</div></div><div class="project-info"><span class="project-type" data-i18n="projectTypeAuto">AUTOMATION</span><h3 data-i18n="projectFollow">Lead follow-up flow</h3><p data-i18n="projectFollowDesc">Route requests, keep records organized, and prepare the next step.</p><span class="project-arrow">↗</span></div></article>
-      </div>
-    </section>
-
-    <section class="pricing section-wrap section-space" id="pricing">
-      <div class="pricing-heading"><div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="pricingEyebrow">CLEAR STARTING POINTS</span></div><h2 data-i18n="pricingTitle">The right setup for<br><span class="muted-heading">your next move.</span></h2><p data-i18n="pricingDesc">Every project is scoped around your goals. These are starting points, not one-size-fits-all packages.</p></div>
-      <div class="pricing-grid">
-        <article class="price-card"><span class="plan-tag" data-i18n="planStarter">STARTER</span><h3 data-i18n="plan1Title">Launch</h3><p data-i18n="plan1Desc">A focused digital starting point.</p><div class="price-amount" data-i18n="plan1Price">Let’s discuss</div><ul><li data-i18n="plan1Feature1">Responsive landing page</li><li data-i18n="plan1Feature2">Clear contact journey</li><li data-i18n="plan1Feature3">Basic analytics setup</li></ul><a class="button button-ghost price-button" href="#contact" data-i18n="planCta">Discuss your project ↗</a></article>
-        <article class="price-card price-featured"><span class="popular-tag" data-i18n="popular">BEST FOR GROWTH</span><span class="plan-tag" data-i18n="planBusiness">BUSINESS</span><h3 data-i18n="plan2Title">Connect</h3><p data-i18n="plan2Desc">Website plus a smarter workflow.</p><div class="price-amount" data-i18n="plan2Price">Custom quote</div><ul><li data-i18n="plan2Feature1">Multi-section website</li><li data-i18n="plan2Feature2">One automation workflow</li><li data-i18n="plan2Feature3">Lead capture & notifications</li><li data-i18n="plan2Feature4">Integration planning</li></ul><a class="button button-primary price-button" href="#contact" data-i18n="planCta">Discuss your project ↗</a></article>
-        <article class="price-card"><span class="plan-tag" data-i18n="planCustom">CUSTOM</span><h3 data-i18n="plan3Title">Scale</h3><p data-i18n="plan3Desc">For more connected operations.</p><div class="price-amount" data-i18n="plan3Price">Built around you</div><ul><li data-i18n="plan3Feature1">Custom business systems</li><li data-i18n="plan3Feature2">Multiple workflows</li><li data-i18n="plan3Feature3">CRM & tool integrations</li><li data-i18n="plan3Feature4">Ongoing improvement options</li></ul><a class="button button-ghost price-button" href="#contact" data-i18n="planCta">Discuss your project ↗</a></article>
-      </div>
-    </section>
-
-    <section class="contact section-wrap section-space" id="contact">
-      <div class="contact-panel"><div class="contact-orb"></div><div class="contact-copy"><div class="eyebrow"><span class="pulse-dot"></span><span data-i18n="contactEyebrow">YOUR NEXT STEP STARTS HERE</span></div><h2 data-i18n="contactTitle">Let’s make your<br><span class="gradient-text">work flow.</span></h2><p data-i18n="contactDesc">Tell us what you want to improve. We’ll help map the simplest useful solution for your business.</p><div class="contact-points"><span><i>✓</i><span data-i18n="contactPoint1">No pressure, just a practical conversation</span></span><span><i>✓</i><span data-i18n="contactPoint2">Start small, scale when ready</span></span></div></div>
-        <form class="contact-form" id="contactForm"><label for="name" data-i18n="labelName">Your name</label><input id="name" name="name" autocomplete="name" required placeholder="e.g. Omar" data-placeholder="namePlaceholder"><label for="projectType" data-i18n="labelProject">What do you need?</label><select id="projectType" name="projectType" required><option value="" data-i18n="chooseOption">Choose a project type</option><option value="Website" data-i18n="optionWebsite">Website or landing page</option><option value="Automation" data-i18n="optionAutomation">Automation & integrations</option><option value="AI assistant" data-i18n="optionAI">AI assistant or chatbot</option><option value="Business system" data-i18n="optionSystem">Custom business system</option><option value="Not sure yet" data-i18n="optionOther">Not sure yet</option></select><label for="details" data-i18n="labelDetails">A little about your idea</label><textarea id="details" name="details" rows="3" placeholder="What would you like to make easier?" data-placeholder="detailsPlaceholder"></textarea><button class="button button-primary form-submit" type="submit"><span data-i18n="formCta">Prepare my enquiry</span><span>↗</span></button><p class="form-note" data-i18n="formNote">This opens your email app with the details filled in. Nothing is sent automatically.</p></form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer section-wrap"><a class="brand" href="#home"><span class="brand-mark">Q</span><span>QSX<span class="cyan">AI</span></span></a><p data-i18n="footerText">Smart digital experiences. Connected systems. Better work.</p><div class="footer-links"><a href="#services" data-i18n="navServices">Services</a><a href="#work" data-i18n="navWork">Our work</a><a href="#contact" data-i18n="navContact">Contact</a></div><span class="copyright">© <span id="year"></span> QSX AI</span></footer>
-  <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="script.js"></script>
+      </div><div class="laptop-base"></div>
+    </div>
+    <div class="floating-chip chip-top"><span>✦</span><div><b data-i18n="chipAI">AI Assistant</b><small data-i18n="chipAISub">Ready to help</small></div><i class="chip-status"></i></div>
+    <div class="floating-chip chip-bottom"><span>↗</span><div><b data-i18n="chipFlow">Workflow connected</b><small data-i18n="chipFlowSub">4 steps · running</small></div><i class="chip-status"></i></div>
+    <div class="stage-caption"><span class="stage-line"></span><span data-i18n="stageCaption">ONE CONNECTED SYSTEM</span></div>
+  </div>
+  <div class="scroll-cue"><span></span><small data-i18n="scroll">SCROLL TO EXPLORE</small></div>
+</section>
+<section class="intro section-pad">
+  <div class="section-kicker"><span>01</span><span data-i18n="introKicker">MORE THAN A CHATBOT</span></div>
+  <div class="intro-grid"><h2 data-i18n="introTitle">From a simple idea<br>to a <em>full system.</em></h2><p data-i18n="introText">QSX AI brings your website, customer conversations, and business processes together. We design the right solution for the way you work — not just another tool to manage.</p></div>
+</section>
+<section class="services section-pad" id="services">
+  <div class="section-heading"><div><div class="section-kicker"><span>02</span><span data-i18n="servicesKicker">WHAT WE BUILD</span></div><h2 data-i18n="servicesTitle">Tools that move work <em>forward.</em></h2></div><p data-i18n="servicesText">Practical digital systems, designed to work better together.</p></div>
+  <div class="service-grid">
+    <article class="service-card"><div class="card-number">01 / WEB</div><div class="card-symbol symbol-blue">◎</div><h3 data-i18n="svc1">Websites & Landing Pages</h3><p data-i18n="svc1p">Fast, responsive websites that make your brand clear and turn visitors into enquiries.</p><a href="#contact" data-i18n="learn">Explore service ↗</a></article>
+    <article class="service-card"><div class="card-number">02 / AI</div><div class="card-symbol symbol-cyan">✳</div><h3 data-i18n="svc2">AI Assistants</h3><p data-i18n="svc2p">Helpful assistants for common questions, customer support, and incoming requests.</p><a href="#contact" data-i18n="learn">Explore service ↗</a></article>
+    <article class="service-card"><div class="card-number">03 / AUTO</div><div class="card-symbol symbol-purple">⌘</div><h3 data-i18n="svc3">Automation & Workflows</h3><p data-i18n="svc3p">Connect your everyday tools and reduce repetitive manual steps and missed follow-ups.</p><a href="#contact" data-i18n="learn">Explore service ↗</a></article>
+    <article class="service-card"><div class="card-number">04 / CRM</div><div class="card-symbol symbol-blue">▤</div><h3 data-i18n="svc4">Business Systems</h3><p data-i18n="svc4p">Organize leads, requests, and operations so your team can see what happens next.</p><a href="#contact" data-i18n="learn">Explore service ↗</a></article>
+  </div>
+</section>
+<section class="workflow-section section-pad" id="workflow">
+  <div class="section-kicker"><span>03</span><span data-i18n="flowKicker">CONNECTED BY DESIGN</span></div>
+  <div class="workflow-heading"><h2 data-i18n="flowTitle">One journey.<br><em>Every step connected.</em></h2><p data-i18n="flowText">A customer enquiry can become an organized, trackable process — without your team having to repeat the same work.</p></div>
+  <div class="workflow-track">
+    <div class="flow-line"><span></span></div>
+    <article class="flow-step"><div class="flow-icon">◎</div><small>STEP 01</small><h3 data-i18n="flow1">Website</h3><p data-i18n="flow1p">A customer sends an enquiry.</p></article>
+    <article class="flow-step"><div class="flow-icon">✳</div><small>STEP 02</small><h3 data-i18n="flow2">AI Assistant</h3><p data-i18n="flow2p">Understand and route the request.</p></article>
+    <article class="flow-step"><div class="flow-icon">⌘</div><small>STEP 03</small><h3 data-i18n="flow3">Automation</h3><p data-i18n="flow3p">Trigger the right next action.</p></article>
+    <article class="flow-step"><div class="flow-icon">▤</div><small>STEP 04</small><h3 data-i18n="flow4">Business system</h3><p data-i18n="flow4p">Keep the team in the loop.</p></article>
+  </div>
+</section>
+<section class="contact section-pad" id="contact"><div class="contact-glow"></div><div class="section-kicker"><span>04</span><span data-i18n="contactKicker">LET'S BUILD SOMETHING USEFUL</span></div><div class="contact-row"><div><h2 data-i18n="contactTitle">Ready to make work <em>flow?</em></h2><p data-i18n="contactText">Tell us what you want to improve. We'll help shape it into a practical digital solution.</p></div><a class="btn" href="mailto:qsxai.team@gmail.com?subject=QSX%20AI%20Project%20Enquiry" data-i18n="contactBtn">Discuss Your Project ↗</a></div></section>
+</main>
+<footer><a class="brand" href="#home">QSX<span>AI</span></a><p data-i18n="footer">Websites, AI, and automation — connected around your business.</p><span>© <span id="year"></span> QSX AI</span></footer>
+<script src="script.js"></script>
 </body>
 </html>
