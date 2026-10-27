@@ -244,3 +244,36 @@ body { max-width:100%; overflow-x:hidden; }
   .workflow-track { grid-template-columns:minmax(0,1fr) !important; }
   .flow-line { display:none !important; }
 }
+
+
+/* QSX AI — final mobile layout override */
+@media screen and (max-width: 700px) {
+  html, body { width:100%; max-width:100%; overflow-x:hidden !important; }
+  .topbar { width:100%; padding:0 12px !important; gap:8px; }
+  .brand { font-size:20px !important; }
+  .nav { display:none !important; }
+  .nav.open { display:flex !important; flex-direction:column !important; }
+  .nav-actions { margin-left:auto; gap:6px; }
+  .nav-actions .btn, .nav-actions .btn-small { display:none !important; }
+  .menu-toggle { display:block !important; }
+  .hero { display:flex !important; flex-direction:column !important; width:calc(100% - 32px) !important; min-height:0 !important; padding:36px 0 !important; gap:0 !important; }
+  .hero-copy { width:100%; min-width:0; }
+  .hero h1 { font-size:clamp(36px, 9.5vw, 48px) !important; line-height:1.1 !important; letter-spacing:-1px !important; overflow-wrap:break-word; }
+  .hero-lead { max-width:100%; font-size:14px; }
+  .hero-actions { display:flex !important; flex-direction:column !important; }
+  .hero-actions .btn { width:100%; min-height:46px; }
+  .device-stage { width:100% !important; height:auto !important; aspect-ratio:1 / 1.1; margin:24px auto 0 !important; overflow:hidden !important; transform:none !important; }
+  .laptop-wrap { width:68% !important; left:16% !important; top:35% !important; }
+  .section-pad { width:calc(100% - 32px) !important; padding:48px 0 !important; }
+  .intro-grid { display:grid !important; grid-template-columns:minmax(0, 1fr) !important; gap:16px !important; }
+  .section-heading, .workflow-heading { display:block !important; }
+  .service-grid { display:grid !important; grid-template-columns:minmax(0, 1fr) !important; gap:14px !important; width:100% !important; }
+  .service-card { width:100% !important; min-width:0 !important; min-height:0 !important; padding:20px !important; overflow-wrap:break-word; }
+  .service-card h3, .service-card p { width:100%; min-height:0 !important; overflow-wrap:break-word; word-break:normal; }
+  .workflow-track { display:grid !important; grid-template-columns:minmax(0, 1fr) !important; gap:24px !important; }
+  .flow-line { display:none !important; }
+  .flow-step { min-width:0; }
+  .contact-row { display:flex !important; flex-direction:column !important; align-items:stretch !important; gap:18px; }
+  .contact-row .btn { width:100%; }
+  footer { width:100%; padding:22px 16px !important; }
+}
