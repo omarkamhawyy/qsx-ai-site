@@ -17,7 +17,7 @@
   }
 
   /* ------------------------------------------------------------------ *
-   * Contact details from js/config.js (placeholders if left empty)
+   * Contact details from config.js (placeholders if left empty)
    * ------------------------------------------------------------------ */
   (function setupContacts() {
     var email = $('[data-contact="email"]');
