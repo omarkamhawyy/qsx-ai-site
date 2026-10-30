@@ -5,7 +5,7 @@
    --------------------------------------------------------------- */
 window.QSX_CONFIG = {
   // Example: "hello@yourdomain.com"
-  email: "",
+  email: "qsxai.team@gmail.com",
   // Digits only, with country code, no "+" or spaces. Example: "201001234567"
-  whatsapp: ""
+  whatsapp: "+201033332602"
 };
